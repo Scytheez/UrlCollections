@@ -78,7 +78,7 @@ const URLManager = () => {
       <div className="relative z-10 container mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold text-white mb-24 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+          <h1 className="text-5xl font-bold text-white mb-24 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text">
             URL Collections
           </h1>
         </div>
