@@ -1825,7 +1825,7 @@ export const Urls = [
     },
     {
         id: 229,
-        title: "Affinity",
+        title: "Affinity1",
         url: "https://affinity.studio",
         category: "Tools",
         description: "Professional creative suite offering graphic design, photo editing, illustration, and publishing applications.",
