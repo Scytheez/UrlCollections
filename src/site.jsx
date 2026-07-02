@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Urls } from './data';
 
 const URLManager = () => {
@@ -6,6 +6,14 @@ const URLManager = () => {
 
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
+  
+  // new
+  const PAGE_SIZE = 20;
+  const [page, setPage] = useState(1);
+  const [visibleUrls, setVisibleUrls] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const observer = useRef(null);
+  //new
 
   const categories = ['All', 'AI', 'Education', 'Entertainment', 'Development', 'Games', 'Tools', 'Trading'];
   
@@ -56,12 +64,83 @@ const URLManager = () => {
     Social: '#8B5CF6'
   };
 
+  /* replaced 
   const filteredUrls = urls.filter(url => {
     const matchesSearch = url.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          url.description.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = selectedCategory === 'All' || url.category === selectedCategory;
     return matchesSearch && matchesCategory;
-  });
+  }); */
+
+  // NEW
+  const filteredUrls = urls
+  .filter(url => {
+    const matchesSearch =
+      url.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      url.description.toLowerCase().includes(searchTerm.toLowerCase());
+
+    const matchesCategory =
+      selectedCategory === 'All' ||
+      url.category === selectedCategory;
+
+    return matchesSearch && matchesCategory;
+  })
+  .sort((a, b) =>
+    a.title.localeCompare(b.title, undefined, {
+      sensitivity: "base",
+      numeric: true
+    })
+  );
+  // NEW
+
+  const hasMore = visibleUrls.length < filteredUrls.length;
+
+  // Reset whenever search/category changes
+  useEffect(() => {
+    setPage(1);
+    setVisibleUrls(filteredUrls.slice(0, PAGE_SIZE));
+  }, [searchTerm, selectedCategory]);
+
+  const loadMore = useCallback(() => {
+    if (loading || !hasMore) return;
+
+    setLoading(true);
+
+    // NEW
+    const nextPage = page + 1;
+
+    setVisibleUrls(filteredUrls.slice(0, nextPage * PAGE_SIZE));
+    setPage(nextPage);
+
+    setLoading(false);
+    // NEW
+  }, [page, loading, hasMore, filteredUrls]);
+
+  const lastCardRef = useCallback(node => {
+
+    if (loading) return;
+
+    if (observer.current)
+      observer.current.disconnect();
+
+    observer.current = new IntersectionObserver(
+      entries => {
+
+        if (entries[0].isIntersecting && hasMore) {
+          loadMore();
+        }
+
+      },
+      {
+        rootMargin: "200px"
+      }
+    );
+
+    if (node)
+      observer.current.observe(node);
+
+  }, [loading, hasMore, loadMore]);
+  // NEW
 
   const openUrl = (url) => {
     window.open(url, '_blank');
@@ -117,11 +196,20 @@ const URLManager = () => {
 
         {/* URL Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {filteredUrls.map((url, index) => {
-            const CategoryIcon = categoryIcons[url.category] || categoryIcons.Social;
+          {// REPLACED  filteredUrls.map((url, index) => {
+            // NEW
+            visibleUrls.map((url, index) => {
+              const isLast =
+                index === visibleUrls.length - 1;
+            // NEW
+
+              const CategoryIcon = categoryIcons[url.category] || categoryIcons.Social;
             return (
               <div
                 key={url.id}
+                // NEW
+                ref={isLast ? lastCardRef : null}
+                // NEW
                 className="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 hover:bg-white/20 transition-all duration-500 transform hover:scale-105 hover:shadow-2xl"
                 style={{ 
                   animation: `fadeInUp 0.5s ease-out ${index * 0.1}s both`
@@ -179,6 +267,22 @@ const URLManager = () => {
           </div>
         )}
       </div>
+
+      {
+      // NEW
+        loading && (
+        <div className="flex justify-center py-10">
+          <div className="w-10 h-10 border-4 border-cyan-400 border-t-transparent rounded-full animate-spin"></div>
+        </div>
+      )}
+
+      {
+      // NEW
+      !hasMore && filteredUrls.length > PAGE_SIZE && (
+        <div className="text-center text-gray-500 py-10">
+          You've reached the end.
+        </div>
+      )}
 
       <style jsx>{`
         @keyframes fadeInUp {
