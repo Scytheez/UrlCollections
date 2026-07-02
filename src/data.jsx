@@ -319,7 +319,7 @@ export const Urls = [
         description: "Tailwind CSS component library with prebuilt UI elements and interactive examples for rapid frontend development.",
         color: "#023a57"
     },
-{
+    {
         id: 41,
         title: "freeCodeCamp",
         url: "https://freecodecamp.org",
@@ -327,7 +327,7 @@ export const Urls = [
         description: "Nonprofit platform offering thousands of free coding lessons, certifications, and real-world developer projects.",
         color: "#023a57"
     },
-{
+    {
         id: 42,
         title: "FreeConvert",
         url: "https://freeconvert.com",
@@ -335,7 +335,7 @@ export const Urls = [
         description: "Online file conversion platform supporting images, videos, audio, documents, and eBook formats up to 1GB.",
         color: "#023a57"
     },
-{
+    {
         id: 43,
         title: "FreePDF Books",
         url: "https://freepdf-books.com",
@@ -343,7 +343,7 @@ export const Urls = [
         description: "Library of free downloadable PDF books focused on engineering, programming, and technology topics.",
         color: "#023a57"
     },
-{
+    {
         id: 44,
         title: "Freepik",
         url: "https://freepik.com",
@@ -351,7 +351,7 @@ export const Urls = [
         description: "Resource site for free vectors, PSDs, icons, and photos for designers, including AI-generated assets.",
         color: "#023a57"
     },
-{
+    {
         id: 45,
         title: "GeeksforGeeks",
         url: "https://geeksforgeeks.org",
@@ -359,7 +359,7 @@ export const Urls = [
         description: "Comprehensive computer science portal covering tutorials, DSA problems, interview prep, and coding contests.",
         color: "#023a57"
     },
-{
+    {
         id: 46,
         title: "GNS3",
         url: "https://gns3.com",
@@ -367,7 +367,7 @@ export const Urls = [
         description: "Network simulation software used by engineers to design and test virtual networks before deployment.",
         color: "#023a57"
     },
-{
+    {
         id: 47,
         title: "Guru99",
         url: "https://guru99.com",
@@ -375,7 +375,7 @@ export const Urls = [
         description: "Free tutorials across QA testing, DevOps, SAP, cybersecurity, and software engineering fundamentals.",
         color: "#023a57"
     },
-{
+    {
         id: 48,
         title: "Hacker101",
         url: "https://hacker101.com",
@@ -383,7 +383,7 @@ export const Urls = [
         description: "Free video course on ethical hacking and web security, created by the HackerOne platform.",
         color: "#023a57"
     },
-{
+    {
         id: 49,
         title: "HackerOne",
         url: "https://hackerone.com",
@@ -391,7 +391,7 @@ export const Urls = [
         description: "Crowdsourced security platform connecting ethical hackers with organizations to find and fix vulnerabilities.",
         color: "#023a57"
     },
-{
+    {
         id: 50,
         title: "HackMyVM",
         url: "https://hackmyvm.eu",
@@ -399,7 +399,7 @@ export const Urls = [
         description: "Capture-the-flag style platform offering Linux-based vulnerable virtual machines for ethical hacking practice.",
         color: "#023a57"
     },
-{
+    {
         id: 51,
         title: "HacksNation",
         url: "https://hacksnation.com",
@@ -407,7 +407,7 @@ export const Urls = [
         description: "Forum and content site sharing coding resources, tools, cracked software, and learning materials.",
         color: "#023a57"
     },
-{
+    {
         id: 52,
         title: "Hacksplaining",
         url: "https://hacksplaining.com",
@@ -415,7 +415,7 @@ export const Urls = [
         description: "Interactive security training platform that teaches common web vulnerabilities through hands-on examples.",
         color: "#023a57"
     },
-{
+    {
         id: 53,
         title: "Hemingway Editor",
         url: "https://hemingwayapp.com",
@@ -423,7 +423,7 @@ export const Urls = [
         description: "Online writing assistant that highlights readability issues, complex sentences, and passive voice for clearer text.",
         color: "#023a57"
     },
-{
+    {
         id: 54,
         title: "Hugging Face Chat",
         url: "https://huggingface.co/chat/",
@@ -431,7 +431,7 @@ export const Urls = [
         description: "Conversational AI interface for exploring open-source LLMs like Mistral, Falcon, and Mixtral via chat.",
         color: "#023a57"
     },
-{
+    {
         id: 55,
         title: "iFixit",
         url: "https://ifixit.com",
@@ -439,7 +439,7 @@ export const Urls = [
         description: "Repair community offering step-by-step guides, teardown videos, and parts for DIY electronics and devices.",
         color: "#023a57"
     },
-{
+    {
         id: 56,
         title: "IANA",
         url: "https://iana.org",
@@ -447,7 +447,7 @@ export const Urls = [
         description: "Official authority managing IP address allocation, domain root zones, and Internet protocol registries.",
         color: "#023a57"
     },
-{
+    {
         id: 57,
         title: "iLovePDF",
         url: "https://ilovepdf.com",
@@ -455,7 +455,7 @@ export const Urls = [
         description: "Free PDF editor offering merge, split, compress, convert, and watermark features for PDFs online.",
         color: "#023a57"
     },
-{
+    {
         id: 58,
         title: "IT Exam Answers",
         url: "https://itexamanswers.net",
@@ -463,7 +463,7 @@ export const Urls = [
         description: "Community-driven archive of Cisco and CompTIA certification exam questions and verified answers.",
         color: "#023a57"
     },
-{
+    {
         id: 59,
         title: "IT Tools",
         url: "https://it-tools.tech",
@@ -487,7 +487,7 @@ export const Urls = [
         description: "Modern and in-depth JavaScript tutorial that covers fundamentals, advanced topics, and browser-related APIs.",
         color: "#023a57"
     },
-{
+    {
         id: 62,
         title: "JSTOR",
         url: "https://jstor.org",
@@ -495,7 +495,7 @@ export const Urls = [
         description: "Digital library of academic journals, books, and primary sources in the humanities, sciences, and social sciences.",
         color: "#023a57"
     },
-{
+    {
         id: 63,
         title: "Kaggle",
         url: "https://kaggle.com",
@@ -503,7 +503,7 @@ export const Urls = [
         description: "Platform for data science competitions, datasets, code notebooks, and machine learning community projects.",
         color: "#023a57"
     },
-{
+    {
         id: 64,
         title: "Learn Anything",
         url: "https://learn-anything.xyz",
@@ -511,7 +511,7 @@ export const Urls = [
         description: "Mind map–driven resource explorer that helps visualize and discover learning paths for any topic.",
         color: "#023a57"
     },
-{
+    {
         id: 65,
         title: "LeetCode",
         url: "https://leetcode.com",
@@ -519,7 +519,7 @@ export const Urls = [
         description: "Popular coding interview prep platform with 2,000+ problems in algorithms, databases, and system design.",
         color: "#023a57"
     },
-{
+    {
         id: 66,
         title: "LabEx Linux Commands",
         url: "https://linux-commands.labex.io",
@@ -527,7 +527,7 @@ export const Urls = [
         description: "Interactive lab-based Linux command learning platform with real terminal simulation and challenges.",
         color: "#023a57"
     },
-{
+    {
         id: 67,
         title: "Linux Survival",
         url: "https://linuxsurvival.com",
@@ -535,7 +535,7 @@ export const Urls = [
         description: "Beginner-friendly interactive tutorials teaching Linux commands and shell scripting basics through quizzes.",
         color: "#023a57"
     },
-{
+    {
         id: 68,
         title: "Linux Journey",
         url: "https://linuxjourney.com",
@@ -543,7 +543,7 @@ export const Urls = [
         description: "Free and structured path to learning Linux fundamentals with categorized, illustrated lessons.",
         color: "#023a57"
     },
-{
+    {
         id: 69,
         title: "LoneWolf Online",
         url: "https://lonewolfonline.net",
@@ -551,7 +551,7 @@ export const Urls = [
         description: "Collection of unique online utilities including random generators, puzzle solvers, and content tools.",
         color: "#023a57"
     },
-{
+    {
         id: 70,
         title: "Lordicon",
         url: "https://lordicon.com",
@@ -559,7 +559,7 @@ export const Urls = [
         description: "Animated icon library with Lottie support, customizable styles, and code export for modern web design.",
         color: "#023a57"
     },
-{
+    {
         id: 71,
         title: "LumpySoft",
         url: "https://lumpysoft.com",
@@ -567,7 +567,7 @@ export const Urls = [
         description: "Website offering utilities, calculators, and small productivity tools tailored for developers and analysts.",
         color: "#023a57"
     },
-{
+    {
         id: 72,
         title: "Microsoft Math Solver",
         url: "https://mathsolver.microsoft.com/en",
@@ -575,7 +575,7 @@ export const Urls = [
         description: "AI-powered math solver that handles algebra, calculus, and word problems with step-by-step explanations.",
         color: "#023a57"
     },
-{
+    {
         id: 73,
         title: "Mathway",
         url: "https://mathway.com",
@@ -583,7 +583,7 @@ export const Urls = [
         description: "Problem solver for algebra to calculus that provides instant answers and detailed solution steps.",
         color: "#023a57"
     },
-{
+    {
         id: 74,
         title: "Magic Eraser by MagicStudio",
         url: "https://magicstudio.com/magiceraser",
@@ -591,7 +591,7 @@ export const Urls = [
         description: "AI-powered tool that lets users erase objects from images seamlessly with one click.",
         color: "#023a57"
     },
-{
+    {
         id: 75,
         title: "Medium",
         url: "https://medium.com",
@@ -599,7 +599,7 @@ export const Urls = [
         description: "Platform for publishing and discovering insightful articles, blogs, and stories across every field.",
         color: "#023a57"
     },
-{
+    {
         id: 76,
         title: "MeritNotes",
         url: "https://meritnotes.com",
@@ -607,7 +607,7 @@ export const Urls = [
         description: "Archive of exam preparation notes, interview questions, and engineering academic resources.",
         color: "#023a57"
     },
-{
+    {
         id: 77,
         title: "Merriam-Webster Dictionary",
         url: "https://merriam-webster.com",
@@ -615,7 +615,7 @@ export const Urls = [
         description: "Authoritative American dictionary offering word definitions, thesaurus entries, quizzes, and etymology.",
         color: "#023a57"
     },
-{
+    {
         id: 78,
         title: "Merriam-Webster Word Finder",
         url: "https://merriam-webster.com/wordfinder",
@@ -623,7 +623,7 @@ export const Urls = [
         description: "Game and puzzle solver helping find valid Scrabble, crossword, or Wordle words from given letters.",
         color: "#023a57"
     },
-{
+    {
         id: 79,
         title: "Omni Calculator",
         url: "https://omnicalculator.com",
@@ -647,7 +647,7 @@ export const Urls = [
         description: "Free online OCR service that extracts editable text from images and PDFs directly in the browser.",
         color: "#023a57"
     },
-{
+    {
         id: 82,
         title: "Photopea",
         url: "https://photopea.com",
@@ -655,7 +655,7 @@ export const Urls = [
         description: "Browser-based photo editor compatible with PSD, AI, and Sketch files, offering advanced layers and filters like Photoshop.",
         color: "#023a57"
     },
-{
+    {
         id: 83,
         title: "picoCTF",
         url: "https://picoctf.org",
@@ -1815,13 +1815,36 @@ export const Urls = [
         description: "High‑resolution wallpaper site offering curated 4K and mobile backgrounds in hundreds of categories.",
         color: "#023a57"
     },
-{
+    {
         id: 228,
         title: "000Webhost",
         url: "https://000webhost.com",
         category: "Development",
         description: "Free web‑hosting provider from Hostinger offering cPanel, PHP, MySQL, and website builder tools.",
         color: "#023a57"
-    }
-
+    },
+    {
+        id: 229,
+        title: "Affinity",
+        url: "https://affinity.studio",
+        category: "Tools",
+        description: "Professional creative suite offering graphic design, photo editing, illustration, and publishing applications.",
+        color: "#023a57"
+    },
+    {
+        id: 230,
+        title: "Developer Roadmap",
+        url: "https://andreasbm.github.io/web-skills/?compact",
+        category: "Development",
+        description: "Interactive web development skills roadmap covering frontend, backend, DevOps, programming languages, and related technologies.",
+        color: "#023a57"
+    },
+    {
+        id: 231,
+        title: "Entertrained",
+        url: "https://entertrained.app",
+        category: "Education",
+        description: "Learning platform that combines educational content with interactive and engaging training experiences.",
+        color: "#023a57"
+    },
 ];
