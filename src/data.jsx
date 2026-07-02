@@ -1823,21 +1823,4 @@ export const Urls = [
         description: "Free web‑hosting provider from Hostinger offering cPanel, PHP, MySQL, and website builder tools.",
         color: "#023a57"
     },
-    {
-        id: 229,
-        title: "pcoow",
-        url: "https://sample.com",
-        category: "Games",
-        description: "Free web‑hosting provider from Hostinger offering cPanel, PHP, MySQL, and website builder tools.",
-        color: "#023a57"
-    },
-    {
-        id: 230,
-        title: "meow",
-        url: "https://meow.com",
-        category: "Games",
-        description: "Free web‑hosting provider from Hostinger offering cPanel, PHP, MySQL, and website builder tools.",
-        color: "#023a57"
-    },
-
 ];
