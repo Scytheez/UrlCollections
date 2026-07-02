@@ -1815,7 +1815,7 @@ export const Urls = [
         description: "High‑resolution wallpaper site offering curated 4K and mobile backgrounds in hundreds of categories.",
         color: "#023a57"
     },
-{
+    {
         id: 228,
         title: "000Webhost",
         url: "https://000webhost.com",
@@ -1830,6 +1830,6 @@ export const Urls = [
             category: "Games",
             description: "Free web‑hosting provider from Hostinger offering cPanel, PHP, MySQL, and website builder tools.",
             color: "#023a57"
-    }
+    },
 
 ];
